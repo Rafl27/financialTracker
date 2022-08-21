@@ -8,6 +8,7 @@ padding:20px;
 margin-top:20px;
 display: flex;
 align-items: center;
+font-family:monospace;
 `
 
 export const InputLabel = styled.label`
@@ -41,6 +42,7 @@ export const Button = styled.button`
     background-color: lightblue;
     color: black;
     cursor: pointer;
+    font-family:monospace;
     &:hover {
         background-color: blue;
         color: white;

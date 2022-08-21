@@ -2,6 +2,8 @@ import * as Component from './styles'
 import { Item } from '../../types/Item'
 import { formatDate } from '../../helpers/dateFilter'
 import { categories } from '../../data/categories'
+import { formatCurrency } from '../../helpers/formatCurrency';
+
 
 type Props = {
   item: Item
@@ -22,7 +24,7 @@ export const TableItem = ({ item }: Props) => {
         <Component.Value
           color={categories[item.category].expense ? 'red' : 'green'}
         >
-          {item.value}
+          {formatCurrency(item.value)}
         </Component.Value>
       </Component.TableColumn>
     </Component.TableRow>
